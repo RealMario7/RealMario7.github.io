@@ -36,6 +36,8 @@
     <li>All data stays on the owner's own computer. The app has no server and no online database.</li>
     <li>The Google sign-in token is stored in a local file on that computer, and it is used only to talk to the YouTube Data API.</li>
     <li>The app keeps a local record of each upload (video ID, title and date) so the owner can see what was uploaded.</li>
+    <li>The name of the connected channel is stored locally to show which account is connected, and it is deleted when the account is disconnected.</li>
+    <li>The list of playlists read from the API is only kept in memory for a few minutes to avoid repeated requests, and is never written to disk.</li>
   </ul>
 
   <h2>Sharing</h2>
@@ -43,10 +45,13 @@
     The app does not use cookies, advertising or tracking of any kind.</p>
 
   <h2>Deleting data and revoking access</h2>
-  <p>The owner can disconnect the account at any time with the "Disconnect" button in the app, which deletes the stored token, and can revoke the
-    app's access at any time from the Google security settings page:
-    <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a>.
-    Deleting the app's data folder removes all locally stored data.</p>
+  <ul>
+    <li>The "Disconnect" button in the app deletes the stored Google token immediately.</li>
+    <li>Access can be revoked at any time from the Google security settings page:
+      <a href="https://security.google.com/settings/security/permissions">security.google.com/settings/security/permissions</a>.</li>
+    <li>Deleting the app's data folder removes all locally stored data. To request deletion of any data, contact the address below;
+      it will be deleted within 7 days.</li>
+  </ul>
 
   <h2>Changes</h2>
   <p>If this policy changes, the new version will be published on this page with a new date.</p>
